@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap');
+
+*{
+  font-family: "Noto Kufi Arabic", sans-serif;
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+
+body{
+  color: #fff;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #6687C4 ;
+  z-index: 100;
+}
+
+header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin: auto;
+  height: 80px;
+}
+
+header nav .logo{
+  color: #6687C4;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+header nav .links{
+  display: flex;
+}
+
+header nav .links li{
+  position: relative;
+  margin: 0 25px;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+}
+
+header nav .links li::after{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #004AAD;
+  transition: 0.3s;
+}
+
+header nav .links li:hover::after{
+  width: 100%;
+}
+
+header nav .links li a{
+  color: #c8c6c6;
+  font-size: 1.1em;
+}
+
+.social-icons a i{
+  color: #6687C4;
+  font-size: 1.5em;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.social-icons a i:hover{
+  color: #c8c6c6;
+}
+
+.hero-sec{
+  height: 100vh;
+  background-image: url(img/cover.png);
+  background-size: cover;
+  background-position: top;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #6687C4 ;
+}
+
+.contanier{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.info{
+  width: 50%;
+}
+
+.info h1{
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.info p{
+  font-size: 1.5em;
+  color: #6687C4;
+  font-weight: 500;
+  margin: 0px 0 50px;
+}
+
+.info a{
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 600;
+  border: 3px solid #6687C4;
+  background-color: #6687C4;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.info a:hover{
+  background-color: #fff;
+  color:#6687C4 ;
+}
+
+.div-img{
+  width: 40%;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+}
+
+.div-img img{
+  width: 100%;
+}
+
+#btnMenu{
+  display: none;
+}
+
+.main1 {
+  padding: 50px 20px;
+  background-color: #111724;
+  text-align: center;
+}
+
+.title {
+  color: #516ea5;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main2 p {
+  color: #111724;
+  margin-top: 20px;
+  font-size: 1.2em;
+  background-color: #c8c6c6;
+  padding: 20px 30px;
+  text-align: right;
+  border-radius: 30px;
+  margin: 15px 5px;
+}
+
+.main2 p span {
+  color: #516ea5;
+  font-weight: 700;
+}
+
+.main2 p a {
+  color: #004AAD;
+}
+
+.card {
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+.icon {
+  color: #111724;
+  font-size: 6em;
+  text-align: center;
+}
+
+.info1 {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.info1 h2 {
+  color: #004AAD;
+  font-size: 1.4em;
+  font-weight: 900;
+}
+
+.info1 h3 {
+  color: #111724;
+  font-size: 1em;
+  margin-top: 4px;
+}
+
+.info1 p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.info1 a{
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: 600;
+  border: 3px solid #6687C4;
+  background-color: #004AAD;
+  padding: 5px 5px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.info1 a:hover{
+  background-color: #c8c6c6;
+  color:#6687C4 ;
+}
+
+.footer {
+  background-color: #111724;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.lang{
+  color: #6687C4;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+@media ( max-width : 1200px ){
+  .main1 {
+    padding: 6vh 8vw;
+  }
+
+  .title {
+    font-size: 2.2em;
+    margin-top: 10px;
+  }
+
+  .main2 p {
+    padding: 2vh 2vw;
+  }
+}
+
+@media ( max-width : 980px ) {
+  header nav .links{
+    position: absolute;
+    top: 100%;
+    right: -420px;
+    flex-direction: column;
+    background-color: black;
+    border-left: 1px solid #444;
+    width: 400px;
+    height: 100vh;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  header nav .links.active{
+    right: 0;
+  }
+
+  .social-icons{
+    text-align: center;
+  }
+
+  #btnMenu{
+    display: block;
+    color: #c8c6c6;
+    font-size: 30px;
+  }
+
+  #btnMenu:hover{
+    color: #6687C4;
+  }
+
+  .hero-sec{
+    height: auto;
+  }
+
+  .hero-sec .contanier{
+    flex-direction: column;
+  }
+
+  .info{
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 60px;
+    text-align: center;
+  }
+
+  .div-img{
+    position: relative;
+    width: 80%;
+    margin-top: 100px;
+  }
+  
+  .info h1{
+    font-size: 2.3em;
+  }
+  
+  .info p{
+    font-size: 1.2em;
+  }
+.title ,.title1{
+  font-size: 2em;
+}
+
+
+.main1 {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2em;
+}
+
+.main2 p {
+  font-size: 1em;
+  padding: 2vh 2vh;
+  border-radius: 20px;
+}
+
+.title1{
+  margin-top: 5px;
+}
+}
+
+@media ( max-width : 480px){ 
+  .info h1{ 
+    font-size: 2.1em 
+  } 
+   
+  .info p{ 
+    font-size: 1.2em;
+  } 
+   
+  .div-img{ 
+    width: 100%; 
+  } 
+
+  .main1 {
+    padding: 4vh 4vw;
+  }
+
+  .title {
+    font-size: 1.8em;
+  }
+
+  .main2 p {
+    font-size: 0.9em;
+    padding: 2vh 1vw;
+  }
+}
+
+
